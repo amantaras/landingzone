@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "microsoft.devtestlab/schedules",
+      "name": "shutdown-computevm-agustindev",
+      "apiVersion": "2018-10-15-preview",
+      "location": "westus",
+      "tags": null,
+      "properties": {
+        "status": "Disabled",
+        "taskType": "ComputeVmShutdownTask",
+        "dailyRecurrence": {
+          "time": "1900"
+        },
+        "timeZoneId": "UTC",
+        "notificationSettings": {
+          "status": "Enabled",
+          "timeInMinutes": 30,
+          "webhookUrl": "",
+          "emailRecipient": "amantaras@hotmail.com",
+          "notificationLocale": "en"
+        },
+        "targetResourceId": "/subscriptions/10ac26cd-10f5-4bdf-a172-4e959e9e861f/resourceGroups/agustindev_group/providers/Microsoft.Compute/virtualMachines/agustindev",
+        "uniqueIdentifier": "09c8f145-1a1e-443d-8c0c-9eba38e35b6d"
+      }
+    }
+  ],
+  "outputs": {}
+}

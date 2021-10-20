@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Network/publicIPAddresses",
+      "name": "agustindev-ip",
+      "apiVersion": "2021-05-01",
+      "location": "westus",
+      "tags": null,
+      "properties": {
+        "ipAddress": "13.91.130.136",
+        "publicIPAddressVersion": "IPv4",
+        "publicIPAllocationMethod": "Dynamic",
+        "idleTimeoutInMinutes": 4,
+        "ipTags": [],
+        "ipConfiguration": {
+          "id": "/subscriptions/10ac26cd-10f5-4bdf-a172-4e959e9e861f/resourceGroups/agustindev_group/providers/Microsoft.Network/networkInterfaces/agustindev689/ipConfigurations/ipconfig1"
+        }
+      }
+    }
+  ],
+  "outputs": {}
+}
