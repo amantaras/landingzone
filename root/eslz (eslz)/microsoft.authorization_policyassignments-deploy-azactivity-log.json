@@ -1,0 +1,42 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.Authorization/policyAssignments",
+      "name": "Deploy-AzActivity-Log",
+      "apiVersion": "2021-06-01",
+      "location": "uaenorth",
+      "identity": {
+        "type": "SystemAssigned",
+        "principalId": "09684ef8-1272-4b83-b961-fc9793a9d6de",
+        "tenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0"
+      },
+      "properties": {
+        "Scope": "/providers/Microsoft.Management/managementGroups/eslz",
+        "NotScopes": null,
+        "DisplayName": "Configure Azure Activity logs to stream to specified Log Analytics workspace",
+        "Description": "Deploys the diagnostic settings for Azure Activity to stream subscriptions audit logs to a Log Analytics workspace to monitor subscription-level events",
+        "EnforcementMode": "Default",
+        "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/2465583e-4e78-4c15-b6be-a36cbc7c8b0f",
+        "Parameters": {
+          "logAnalytics": {
+            "value": "/subscriptions/10ac26cd-10f5-4bdf-a172-4e959e9e861f/resourceGroups/eslz-mgmt/providers/Microsoft.OperationalInsights/workspaces/eslz-law"
+          },
+          "logsEnabled": {
+            "value": "True"
+          }
+        },
+        "NonComplianceMessages": null
+      }
+    }
+  ],
+  "outputs": {}
+}

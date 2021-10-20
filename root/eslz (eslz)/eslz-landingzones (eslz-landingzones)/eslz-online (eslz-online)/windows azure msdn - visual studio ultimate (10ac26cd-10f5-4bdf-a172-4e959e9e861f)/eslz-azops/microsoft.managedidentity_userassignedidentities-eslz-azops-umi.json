@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.ManagedIdentity/userAssignedIdentities",
+      "name": "eslz-azops-umi",
+      "apiVersion": "2018-11-30",
+      "location": "uaenorth",
+      "tags": {},
+      "properties": {
+        "tenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0",
+        "principalId": "ae368c38-82b5-4a0d-a9b2-26145f641cb1",
+        "clientId": "2771443a-d2a7-4b87-848a-e104e9ecc3e2"
+      }
+    }
+  ],
+  "outputs": {}
+}

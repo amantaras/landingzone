@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "metadata": {
+    "_generator": {
+      "name": "AzOps"
+    }
+  },
+  "parameters": {},
+  "variables": {},
+  "resources": [
+    {
+      "type": "Microsoft.ClassicStorage/storageAccounts",
+      "name": "portalvhdssq05drh9c0xsl",
+      "apiVersion": "2016-11-01",
+      "location": "northeurope",
+      "tags": null,
+      "properties": {
+        "status": "Created",
+        "endpoints": [
+          "https://portalvhdssq05drh9c0xsl.blob.core.windows.net/",
+          "https://portalvhdssq05drh9c0xsl.queue.core.windows.net/",
+          "https://portalvhdssq05drh9c0xsl.table.core.windows.net/",
+          "https://portalvhdssq05drh9c0xsl.file.core.windows.net/"
+        ],
+        "accountType": "Standard-GRS",
+        "geoPrimaryRegion": "North Europe",
+        "statusOfPrimaryRegion": "Available",
+        "geoSecondaryRegion": "West Europe",
+        "statusOfSecondaryRegion": "Available"
+      }
+    }
+  ],
+  "outputs": {}
+}
