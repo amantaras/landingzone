@@ -15,9 +15,10 @@
       "apiVersion": "2021-06-01",
       "location": "uaenorth",
       "identity": {
-        "type": "SystemAssigned",
-        "principalId": "3a8d5959-f289-4694-a272-d0a16faa6bac",
-        "tenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0"
+        "PrincipalId": "3a8d5959-f289-4694-a272-d0a16faa6bac",
+        "TenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0",
+        "IdentityType": "SystemAssigned",
+        "UserAssignedIdentities": null
       },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/eslz-landingzones",
