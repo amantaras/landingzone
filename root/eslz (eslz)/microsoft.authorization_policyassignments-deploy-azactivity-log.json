@@ -15,9 +15,10 @@
       "apiVersion": "2021-06-01",
       "location": "uaenorth",
       "identity": {
-        "type": "SystemAssigned",
-        "principalId": "09684ef8-1272-4b83-b961-fc9793a9d6de",
-        "tenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0"
+        "PrincipalId": "09684ef8-1272-4b83-b961-fc9793a9d6de",
+        "TenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0",
+        "IdentityType": "SystemAssigned",
+        "UserAssignedIdentities": null
       },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/eslz",
