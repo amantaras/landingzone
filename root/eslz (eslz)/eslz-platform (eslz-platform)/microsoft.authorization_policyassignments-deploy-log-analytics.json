@@ -17,8 +17,7 @@
       "identity": {
         "PrincipalId": "701f87ed-5e4b-4b49-8fcc-2fe149dfbf2a",
         "TenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0",
-        "IdentityType": "SystemAssigned",
-        "UserAssignedIdentities": null
+        "Type": "SystemAssigned"
       },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/eslz-platform",

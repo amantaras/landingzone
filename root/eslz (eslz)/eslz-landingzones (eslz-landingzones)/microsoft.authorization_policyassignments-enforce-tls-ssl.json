@@ -17,8 +17,7 @@
       "identity": {
         "PrincipalId": "9efad611-0ad4-4a2c-a614-24820346826b",
         "TenantId": "f55ea574-4668-4b66-8012-231b65c3b4f0",
-        "IdentityType": "SystemAssigned",
-        "UserAssignedIdentities": null
+        "Type": "SystemAssigned"
       },
       "properties": {
         "Scope": "/providers/Microsoft.Management/managementGroups/eslz-landingzones",
